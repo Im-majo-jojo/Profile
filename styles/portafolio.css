@@ -48,7 +48,7 @@ header{
  .linked:hover{
     background-color: #d43b69;
     color:#252525; 
-    box-shadow: 0 0 10px #d43b69, 0 0 40px #d43b69, 0 0 90px #d43b69;
+    box-shadow: inset 0 0 0.5em #d43b69, 0 0 0.5em #d43b69; 
     transition: 100ms linear;
 }
  .selected{
@@ -59,7 +59,7 @@ header{
  .selected:hover{
     background-color: #d43b69;
     color:#252525; 
-    box-shadow: 0 0 10px #d43b69, 0 0 40px #d43b69, 0 0 90px #d43b69;
+    box-shadow: inset 0 0 0.5em #d43b69, 0 0 0.5em #d43b69;
     transition: 100ms linear;
 }
 .list-nav a {
@@ -120,7 +120,7 @@ header{
 .what-i-do:hover{
    background-color: #d43b69;
    color:#252525; 
-   box-shadow: 0 0 10px #d43b69, 0 0 40px #d43b69, 0 0 90px #d43b69;
+   box-shadow: inset 0 0 0.5em #d43b69, 0 0 0.5em #d43b69;
 }
 .presentation-image img{
     margin: 80px 0 80px;
@@ -263,6 +263,11 @@ header{
     font-size: 25px;
     position: relative;
 }
+.fa-quote-right{
+    color: #ffe70c;
+    text-shadow: 0 0 0.125em #ffe70c, 0 0 0.45em #ffe70c;
+    transition: 100ms linear; 
+}
 .quote-section{
     display: flex;
     width: 100%;
@@ -323,7 +328,7 @@ blockquote{
 {
     border: 2px solid #7b1df7; 
     box-shadow: inset 0 0 0.5em #7b1df7, 0 0 0.5em #7b1df7;
-    transition: 100ms linear; ;
+    transition: 100ms linear;
 }
 .projects-box:hover .project-title{
     color: #ffffff;
@@ -364,6 +369,7 @@ blockquote{
     display: flex;
     justify-content: center;
     background-color: #252525;
+    color: #ffffff;
 }
 .contact-box-section{
     display: flex;
@@ -382,20 +388,25 @@ blockquote{
     width: 100%;
 }
 .socialMedia a, li{
-    color: #000000;
+    color: #ffffff;
     list-style: none;
     text-decoration: none; 
-    padding: 15px 0;
+    padding: 20px 0;
 }
 .socialMedia i{
     padding: 8px;
     margin-right: 5px;
     border-radius: 50%;
-    box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+    border: 2px solid #fc7b24; 
+    color:#ffffff; 
+    box-shadow: inset 0 0 0.5em #fc7b24, 0 0 0.5em #fc7b24;
+    transition: 100ms linear;
 } 
 .icon-and-list-hover:hover i{
-    border-radius: 50%;
-    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+    background-color: #fc7b24;
+    color: #ffffff;
+    box-shadow: inset 0 0 0.5em #fc7b24, 0 0 0.5em #fc7b24;
+    transition: 100ms linear;
 }
 /*form style*/
 .form-content{
@@ -413,10 +424,8 @@ blockquote{
 }
 input,
 textarea{
-    border: transparent;
+    border: #fc7b24;
     padding: 8px;
-    border-radius: 15px;
-    box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
 }
 textarea{
     padding-bottom: 60px;
@@ -426,17 +435,21 @@ label{
     padding: 4px 0;
 }
 .submit-button{
-    color:#000000; 
-    background-color: #b9b9b9;
-    border-radius: 100px;
+    color:#fc7b24; 
+    background-color: #343435;
     padding: 12px 30px;
     max-width: 191px;
-    box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+    border: 2px solid #fc7b24; 
+    text-shadow: 0 0 0.125em #fc7b24, 0 0 0.45em #fc7b24;
+    box-shadow: inset 0 0 0.5em #fc7b24, 0 0 0.5em #fc7b24;
+    transition: 100ms linear;
+    
 }
-.submit-button:hover{
-   background-color: #b9b9b9;
-   color:#000000; 
-   box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+.submit-button:hover{ 
+   background-color: #fc7b24;
+   color:#252525; 
+   box-shadow: inset 0 0 0.5em #fc7b24, 0 0 0.5em #fc7b24;
+   transition: 100ms linear;
 }
 .columns-of-contact-section .title-section{
     display: flex;
@@ -527,10 +540,17 @@ label{
     justify-content: space-evenly;
     font-size: 16px;
     border-radius: 50%;
-    box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+    color: #7fff00;
+    border: 2px solid #7fff00; 
+    text-shadow: 0 0 0.125em #7fff00, 0 0 0.45em #7fff00;
+    box-shadow: inset 0 0 0.5em #7fff00, 0 0 0.5em #7fff00;
+    transition: 100ms linear;
 }
 .social-media-footer:hover{
-    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+    background-color: #7fff00;
+    color: #ffffff;
+    box-shadow: inset 0 0 0.5em #7fff00, 0 0 0.5em #7fff00;
+    transition: 100ms linear;
 }
 .links-footer-container{
     display: flex;
