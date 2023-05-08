@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fragment Mono', monospace;
+    box-sizing: border-box;
+}
+/*titles*/
+.title-section{
+    font-size: 60px;
+    margin: 30px 0;
+}
+/*descriptions*/
+.description-of-section{
+    margin: 30px 0;
+}
+/* header */
+header{
+    background-color: #000000;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    display: none;
+}
+.list-nav{
+   list-style: none;
+   display: flex;
+   justify-content: flex-end;
+}
+.linked{
+   color:#ffffff; 
+   letter-spacing: 4px;
+   padding: 0 30px;
+   line-height: 2.5;
+   font-weight: 300;
+   text-decoration: none;
+}
+@media (min-width: 1100px) {
+  header{
+      display:inline;
+  }
+}
+/* greetings */
+.presentation{
+  padding: 180px 20px 80px;
+}
+.presentation-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.presentation-text{
+  text-align: center;
+}
+.greetings-description{
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.nickname{
+  margin: 15px 0;
+  font-size: 40px;
+  font-weight: 900;
+}
+.greetings{
+  font-size: 25px;
+}
+.presentation-image{
+  margin: 40px 0 80px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+@media (min-width: 1100px) {
+  .presentation{
+    padding: 120px 20px 80px;
+  }
+}
