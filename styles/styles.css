@@ -15,12 +15,12 @@
 }
 /* header */
 header{
-  font-family: 'Lakki Reddy', cursive;
-  background-color: #6d87d1;
-  padding: 10px 0 0;
-  position: fixed;
-  width: 100%;
-  display: none;
+font-family: 'Spicy Rice', cursive;
+background-color: #9f91ec;
+padding: 5px 0 5px;
+position: fixed;
+width: 100%;
+display: none;
 }
 .list-nav{
  list-style: none;
@@ -28,11 +28,12 @@ header{
  justify-content: flex-end;
 }
 .linked{
-color: #2a3261;
- letter-spacing: 3px;
+ color: #7a65f3;
+ -webkit-text-stroke: .5px #9686f0d8;
  padding: 0 30px;
  line-height: 2.5;
- font-weight: 300;
+ font-weight: 400;
+ font-size: 20px;
  text-decoration: none;
  display: flex;
  text-align: center;
@@ -44,14 +45,20 @@ header{
 }
 /* greetings */
 .profile{
-  background-color: #bac9e8;
-  padding: 180px 20px 80px;
+background-color: #bac9e8;
+padding: 180px 20px 80px;
+width: 100%;
+display: flex;
+flex-grow: 1 2;
+flex-direction: column;
+align-items: center;
 }
 .presentation-container{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+width: 40%;
 }
 .presentation-text{
 text-align: center;
@@ -66,8 +73,8 @@ line-height: 15px;
 }
 .nickname{ 
 -webkit-text-fill-color: #de2082;
--webkit-text-stroke: 1px #c91267;
-text-shadow: -4px -4px 0px #ece78c, 4px -4px 0px #ece78c, -4px 4px 0px #ece78c, 4px 4px 0px #ece78c;
+-webkit-text-stroke: 1px #c91267d5;
+text-shadow: -4px -4px 0px #ece78cd5, 4px -4px 0px #ece78cd5, -4px 4px 0px #ece78cd5, 4px 4px 0px #ece78cd5;
 font-family: 'Galindo', cursive;                              
 font-size: 70px;
 font-weight: 900;
@@ -80,11 +87,14 @@ line-height: 70px;
 font-size: 25px;
 font-family: 'Galindo', cursive;
 }
-.presentation-image{
-margin: 40px 0 80px;
+.presentation-imgage{
+margin: 0 0 80px;
 display: flex;
 justify-content: center;
-width: 40%;
+width: 50%;
+}
+.mojo-face{
+  width: 150%;
 }
 /*queries*/
 @media (min-width: 551px) {
@@ -106,5 +116,27 @@ width: 40%;
   padding: 120px 20px 80px;
 }
 }
-margin-bottom: -20PX;
-margin-left: -50PX;
+
+/*footer*/
+.footer,
+.footer a{
+background-color: #9f91ec;
+font-family: 'Spicy Rice', cursive;
+color: #7a65f3;
+-webkit-text-stroke: .5px #9686f0d8;
+text-decoration: none;
+display: flex;
+flex-direction: column;
+}
+.links-footer-container{
+  display: none;
+}
+.list-for-footer-icons i{
+  color: #7a65f3;
+  -webkit-text-stroke: .5px #9686f0d8;
+}
+@media (min-width: 700px) {
+  .links-footer-container{
+    display: flex;
+  }
+}
