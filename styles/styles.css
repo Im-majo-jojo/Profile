@@ -1,17 +1,17 @@
 
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 /*titles*/
 .title-section{
-  font-size: 40px;
-  margin: 30px 0;
+font-size: 40px;
+margin: 30px 0;
 }
 /*descriptions*/
 .description-of-section{
-  margin: 30px 0;
+margin: 30px 0;
 }
 /* header */
 header{
@@ -23,20 +23,20 @@ width: 100%;
 display: none;
 }
 .list-nav{
- list-style: none;
- display: flex;
- justify-content: flex-end;
+list-style: none;
+display: flex;
+justify-content: flex-end;
 }
 .linked{
- color: #7a65f3;
- -webkit-text-stroke: .5px #9686f0d8;
- padding: 0 30px;
- line-height: 2.5;
- font-weight: 400;
- font-size: 20px;
- text-decoration: none;
- display: flex;
- text-align: center;
+color: #7963f7;
+-webkit-text-stroke: .5px #998aeed8;
+padding: 0 30px;
+line-height: 2.5;
+font-weight: 400;
+font-size: 20px;
+text-decoration: none;
+display: flex;
+text-align: center;
 }
 @media (min-width: 1100px) {
 header{
@@ -46,10 +46,10 @@ header{
 /* greetings */
 .profile{
 background-color: #bac9e8;
-padding: 180px 20px 80px;
+padding: 140px 20px 80px;
 width: 100%;
 display: flex;
-flex-grow: 1 2;
+flex-grow: 2 2;
 flex-direction: column;
 align-items: center;
 }
@@ -58,14 +58,14 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 40%;
+width: 60%;
 }
 .presentation-text{
 text-align: center;
 }
 .greetings-text{
-font-size: 16px;
-margin-bottom: 40px;
+font-size: 20px;
+margin:35px 0 40px;
 font-family: 'Lakki Reddy', cursive;
 display: flex;
 text-align: center;
@@ -84,28 +84,28 @@ text-align: center;
 line-height: 70px;
 }
 .greetings{
-font-size: 25px;
+font-size: 30px;
 font-family: 'Galindo', cursive;
 }
 .presentation-imgage{
 margin: 0 0 80px;
 display: flex;
 justify-content: center;
-width: 50%;
+width: 40%;
 }
 .mojo-face{
-  width: 150%;
+  width: 100%;
 }
 /*queries*/
 @media (min-width: 551px) {
 .nickname{
-  margin: 15px 0;
-  font-size: 90px;
+  margin: 20px 0;
+  font-size: 100px;
   margin: 15px 0 0;
 }
 .greetings{
-  margin-bottom: -10px;
-  margin-left: -190px;
+  margin-bottom: -8px;
+  margin-left: -200px;
   }
 .greetings-text{
   margin-top: 10px;
@@ -115,28 +115,52 @@ width: 50%;
 .presentation{
   padding: 120px 20px 80px;
 }
+.profile{
+  flex-direction: row;
+  justify-content:space-evenly;
+  padding: 170px 20px 80px;
+}
+.presentation-container{
+  width: 40%;
+}
+.mojo-face{
+  width: 90%;
+}
 }
 
 /*footer*/
-.footer,
-.footer a{
+.footer{
 background-color: #9f91ec;
 font-family: 'Spicy Rice', cursive;
-color: #7a65f3;
--webkit-text-stroke: .5px #9686f0d8;
-text-decoration: none;
+color: #7963f7;
+-webkit-text-stroke: .5px #998aeed8;
 display: flex;
 flex-direction: column;
 align-items: center;
+padding: 40px 0;
+font-size: 18px;
+}
+.footer a,
+.footer li{
+list-style: none;
+text-decoration: none;
+color: #7963f7;
+-webkit-text-stroke: .5px #998aeed8;
+margin: 20px 5px 20px;
 }
 .links-footer-container{
-  display: none;
+display: none;
 }
-.list-for-footer-icons a,
-.list-for-footer-icons li{
-  color: #7a65f3;
-  -webkit-text-stroke: .5px #9686f0d8;
-  list-style: none;
+.footer-list-of-items,
+.list-for-footer-icons{
+display: flex;
+flex-direction: row;
+padding-bottom: 10px;
+font-size: 22px;
+}
+.done-by{
+  display: flex;
+  text-align: center;
 }
 @media (min-width: 700px) {
   .links-footer-container{
