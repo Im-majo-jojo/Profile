@@ -127,13 +127,16 @@ color: #7a65f3;
 text-decoration: none;
 display: flex;
 flex-direction: column;
+align-items: center;
 }
 .links-footer-container{
   display: none;
 }
-.list-for-footer-icons i{
+.list-for-footer-icons a,
+.list-for-footer-icons li{
   color: #7a65f3;
   -webkit-text-stroke: .5px #9686f0d8;
+  list-style: none;
 }
 @media (min-width: 700px) {
   .links-footer-container{
