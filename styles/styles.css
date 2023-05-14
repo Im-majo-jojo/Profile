@@ -127,6 +127,91 @@ width: 40%;
   width: 90%;
 }
 }
+/*skills*/
+.habilities{
+  background-color: #b1acca;
+}
+/*quote section*/
+.quote-section{
+  width: 100%;
+}
+.quote-background{
+  width: 100%;
+}
+.heart-container-absolute{
+display: flex;
+flex-grow: 1;
+}
+.quote-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #b83400;
+  -webkit-text-stroke: .5px #f55151;
+  text-shadow: -2px -2px 0px #fa6666, 2px -2px 0px #fa6666, -2px 2px 0px #fa6666, 2px 2px 0px #fa6666;
+  font-family: 'Spicy Rice', cursive;
+  font-size: 50px;
+}
+#heart-container{
+  z-index: -100;
+  position: absolute;
+}
+.heart{
+  position: absolute;
+  top: -250px;
+  /* left: 355px; */
+  width: 40px;
+  height: 15px;
+  animation: grow 3s linear infinite;
+} 
+@keyframes grow{
+  0% {transform: scale(0); z-index: 100;}
+  20% {transform: scale(20);z-index: 90;}
+  30% {transform: scale(40);z-index: 70;}
+  40% {transform: scale(60);z-index: 50;}
+  50% {transform: scale(80);z-index: 1;}
+  60% {transform: scale(100);z-index: 0;}
+  70% {transform: scale(120);z-index: -1;}
+  80% {transform: scale(140);z-index: -50;}
+} 
+
+svg:nth-child(2).heart{
+  animation-delay: .25s;
+}
+svg:nth-child(3).heart{
+  animation-delay: .50s;
+}
+svg:nth-child(4).heart{
+  animation-delay: .75s;
+}
+svg:nth-child(5).heart{
+  animation-delay: 1s;
+}
+svg:nth-child(6).heart{
+  animation-delay: 1.25s;
+}
+svg:nth-child(7).heart{
+  animation-delay: 1.50s;
+}
+svg:nth-child(8).heart{
+  animation-delay: 1.75s;
+}
+svg:nth-child(9).heart{
+  animation-delay: 2s;
+}
+svg:nth-child(10).heart{
+  animation-delay: 2.25s;
+}
+svg:nth-child(11).heart{
+  animation-delay: 2.50s;
+}
+svg:nth-child(12).heart{
+  animation-delay: 2.75s;
+}
+svg:nth-child(13).heart{
+  animation-delay: 3s;
+}
 
 /*footer*/
 .footer{
