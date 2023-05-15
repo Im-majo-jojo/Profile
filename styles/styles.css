@@ -21,6 +21,9 @@ padding: 5px 0 5px;
 position: fixed;
 width: 100%;
 display: none;
+-webkit-box-shadow: 0px 15px 29px -1px rgba(0,0,0,0.23);
+-moz-box-shadow: 0px 15px 29px -1px rgba(0,0,0,0.23);
+box-shadow: 0px 15px 29px -1px rgba(0,0,0,0.23);
 }
 .list-nav{
 list-style: none;
@@ -45,13 +48,14 @@ header{
 }
 /* greetings */
 .profile{
-background-color: #bac9e8;
 padding: 140px 20px 80px;
 width: 100%;
 display: flex;
 flex-grow: 2 2;
 flex-direction: column;
 align-items: center;
+background-image: url(/images/0a0aefa311b128f4c712225725b7da832.jpg);
+
 }
 .presentation-container{
 display: flex;
@@ -123,14 +127,20 @@ width: 40%;
 .presentation-container{
   width: 40%;
 }
+.presentation-imgage{
+  margin-right: 30px;
+}
 .mojo-face{
   width: 90%;
 }
 }
 /*skills*/
-.habilities{
-  background-color: #b1acca;
+.habilities,
+.grid-container{
+  background-color: #f7b585;
+
 }
+
 /*quote section*/
 .quote-section{
   width: 100%;
@@ -147,20 +157,20 @@ flex-grow: 1;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  color: #b83400;
-  -webkit-text-stroke: .5px #f55151;
+  color: #ff0000;
+  -webkit-text-stroke: .5px #ff3535;
   text-shadow: -2px -2px 0px #fa6666, 2px -2px 0px #fa6666, -2px 2px 0px #fa6666, 2px 2px 0px #fa6666;
   font-family: 'Spicy Rice', cursive;
   font-size: 50px;
 }
-#heart-container{
+/* #heart-container{
   z-index: -100;
   position: absolute;
 }
 .heart{
   position: absolute;
   top: -250px;
-  /* left: 355px; */
+  /* left: 355px;
   width: 40px;
   height: 15px;
   animation: grow 3s linear infinite;
@@ -211,8 +221,8 @@ svg:nth-child(12).heart{
 }
 svg:nth-child(13).heart{
   animation-delay: 3s;
-}
-
+} */
+*/
 /*footer*/
 .footer{
 background-color: #9f91ec;
