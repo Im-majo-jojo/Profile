@@ -17,12 +17,12 @@ padding: 5px 0 5px;
 position: sticky;
 top: 0;
 width: 100%;
+display: none;
 box-shadow: 0px 15px 29px -1px rgba(0,0,0,0.23);
 }
 .list-nav{
 list-style: none;
 display: flex;
-justify-content: flex-end;
 }
 .linked{
 color: #7963f7;
@@ -35,7 +35,62 @@ text-decoration: none;
 display: flex;
 text-align: center;
 }
-
+@media (min-width: 1100px) {
+ .header{
+  display: flex;
+  justify-content: flex-end;
+ }
+}
+/*skills*/
+.mySkills{
+  font-size: 60px;
+}
+.habilities,
+.grid-container{
+  background-color: #f7b585;
+  font-family: 'Sofia', cursive;
+}
+.habilities{
+  display: flex;
+  flex-grow: 1;
+  text-align: center;
+  justify-content: center;
+  padding: 110px 40px 60px;
+}
+.grid-container{
+  display: flex;
+  justify-content: center;
+  padding: 0 0 10%;
+}
+.big-buttons-for-skills{ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid-buttons{
+  padding: 30px; 
+  margin: 0 3% 3%;
+  background-color:#7963f7;
+  border: 3px solid #998aeed8;
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-buttons i{
+  margin: 10px 0;
+  font-size: 60px;
+}
+.grid-buttons p{
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+@media (min-width: 1000px){
+  .big-buttons-for-skills{ 
+  max-width: 900px;
+  margin: 0 1% 1%;
+  }
+} 
 /* greetings */
 .profile{
 padding: 140px 20px 80px;
@@ -123,20 +178,6 @@ width: 40%;
   width: 90%;
 }
 }
-/*skills*/
-.habilities,
-.grid-container{
-  background-color: #f7b585;
-  font-family: 'Sofia', cursive;
-}
-.habilities{
-  display: flex;
-  flex-grow: 1;
-  text-align: center;
-  justify-content: center;
-  padding: 110px 40px 130px;
-}
-
 /*quote section*/
 .quote-section{
   width: 100%;
@@ -145,68 +186,38 @@ width: 40%;
   width: 100%;
 }
 .heart-container-absolute{
-display: flex;
-flex-grow: 1;
+
 }
 .quote-content{
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  color: #ff0000;
-  -webkit-text-stroke: .5px #ff3535;
-  text-shadow: -2px -2px 0px #fa6666, 2px -2px 0px #fa6666, -2px 2px 0px #fa6666, 2px 2px 0px #fa6666;
+  text-align: center;
+  padding: 50px;
+  color: #fff;
+  -webkit-text-stroke: .5px #998aeed8;
+  text-shadow: -2px -2px 0px #a89bf1d8, 2px -2px 0px #a89bf1d8, -2px 2px 0px #a89bf1d8, 2px 2px 0px #a89bf1d8;
   font-family: 'Spicy Rice', cursive;
   font-size: 50px;
 }
-.grid-container{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-}
-.big-buttons-for-skills{ 
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.grid-buttons{
-  padding: 30px;  
-  margin: 0 0 3%;
-  background-color: #7963f7;
-  display: flex;
-  flex: 0 2;
-  width: 260px;
-  flex-direction: column;
-  align-items: center; 
-}
-@media (min-width: 600px){
-  .grid-buttons{
-    flex: 0 1 260px;
-  }
-}
-@media (min-width: 920px){
-  .grid-buttons{
-  }
-}
-@media (min-width: 1100px){
-  .grid-buttons{
-  }
-}
-
-/* #heart-container{
+#heart-container{
   z-index: -100;
   position: absolute;
 }
+.quote-background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .heart{
   position: absolute;
-  top: -250px;
-  /* left: 355px;
+  top: -150px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 40px;
   height: 15px;
-  animation: grow 3s linear infinite;
+  animation: grow 3s linear infinite; 
 } 
 @keyframes grow{
   0% {transform: scale(0); z-index: 100;}
