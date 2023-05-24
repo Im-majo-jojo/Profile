@@ -195,8 +195,8 @@ width: 40%;
   text-align: center;
   padding: 50px;
   color: #fff;
-  -webkit-text-stroke: .5px #998aeed8;
-  text-shadow: -2px -2px 0px #a89bf1d8, 2px -2px 0px #a89bf1d8, -2px 2px 0px #a89bf1d8, 2px 2px 0px #a89bf1d8;
+  -webkit-text-stroke: .5px #000;
+  text-shadow: -4px -4px 4px #000, 4px 4px 4px #000, -4px 4px 4px #000, 4px -4px 4px #000;
   font-family: 'Spicy Rice', cursive;
   font-size: 50px;
 }
@@ -211,7 +211,7 @@ width: 40%;
 }
 .heart{
   position: absolute;
-  top: -150px;
+  top: -250px;
   left: 0;
   right: 0;
   bottom: 0;
