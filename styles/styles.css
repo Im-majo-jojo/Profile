@@ -185,9 +185,6 @@ width: 40%;
 .quote-background{
   width: 100%;
 }
-.heart-container-absolute{
-
-}
 .quote-content{
   display: flex;
   flex-direction: column;
