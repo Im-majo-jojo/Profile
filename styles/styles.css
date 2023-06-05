@@ -67,7 +67,7 @@ text-align: center;
 .greetings-text{
 font-size: 20px;
 margin:35px 0 40px;
-font-family: 'Lakki Reddy', cursive;
+font-family: 'Spicy Rice', cursive;
 display: flex;
 text-align: center;
 line-height: 15px;
@@ -86,7 +86,18 @@ line-height: 70px;
 }
 .greetings{
 font-size: 30px;
-font-family: 'Galindo', cursive;
+font-family: 'Spicy Rice', cursive;
+}
+.greetings-button{
+  margin-bottom: 10%;
+  background-color: #ece78c;
+  border: none;
+  border-radius: 50px;
+  -webkit-text-fill-color: #de2082;
+  -webkit-text-stroke: 1px #c91267d5;
+  padding: 10px 35px;
+  font-size: 25px;
+  font-family: 'Galindo', cursive; 
 }
 .presentation-imgage{
 margin: 0 0 80px;
@@ -376,6 +387,9 @@ svg:nth-child(13).heart{
   padding: 15px 0;
   margin: 0;
 }
+.information-section{
+  margin-bottom: 3%;
+}
 .contact-section-links a,
 .contact-section-links li{
   text-decoration: none;
@@ -388,6 +402,41 @@ svg:nth-child(13).heart{
 }
 .contact-section-links i{
   margin-right: 10px;
+}
+#name-request,
+#lastname-request,
+#email-request,
+#textare-box-field
+{
+  display: flex;
+  flex-direction: column;
+  margin: 3% 0;
+}
+input{
+  border: none;
+  border-radius: 10px;
+  padding: 2%;
+}
+label{
+  margin: 2% 0;
+}
+textarea{
+  border-radius: 10px;
+  border: none;
+  padding: 2%;
+}
+#submit-button{
+  margin: 3% 0;
+}
+#submit-field{
+  background-color: #c26d1d;
+  border-radius: 50px;
+  padding: 10px 30px;
+  color: #fff;
+  font-family: 'Spicy Rice', cursive;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin: 2% 0;
 }
 /*footer*/
 .footer{

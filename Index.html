@@ -46,6 +46,7 @@
             <p class="greetings">¡Hola! Soy</p>
             <h1 class="nickname">MaJo JoJo</h1>  
             <p class="greetings-text">desarrolladoraWeb <br>wavesCounter | sunshineLover | sueroBeliever</p>
+												<button class="greetings-button">Lo que hago</button>
           </div>
           <div class="presentation-imgage">
             <img src="/images/pngwing.com.png" alt="mojo jojo face" class="mojo-face">
@@ -359,10 +360,10 @@
                                         </a>
                                     </li>
                                     <li class="socialMedia icon">
-                                        <a href="mailto:mj.garcest@gmail." aria-label="gmail" class="icon-and-list-hover">
+                                        <p>
                                             <i class="fa-solid fa-envelope"></i>
                                             mj.garcest@gmail.com
-                                        </a>
+                                        </p>
                                     </li>
                                 </ul>
                             </article>
@@ -375,29 +376,38 @@
                         <section class="form-content">
                             <section class="fields-name-and-lastname">
                                 <article class="name-field">
-                                    <label>Nombre*</label>
-                                    <input type="text" id="name" placeholder="p. ej.: Ada">
+                                    <form id="name-request">
+                                        <label for="name-field">Nombre*</label>
+                                        <input type="text" id="name-field" placeholder="p. ej.: Ada" required>
+                                    </form>
                                 </article>
                                 <article class="lastname-field">
-                                    <label>Apellido*</label>
-                                    <input type="text" id="lastname" placeholder="p. ej.: Lovelace">
+                                    <form id="lastname-request">
+                                        <label for="lastname-field">Apellido*</label>
+                                        <input type="text" id="lastname-field" placeholder="p. ej.: Lovelace" required>
+                                    </form>
                                 </article>
                             </section>
                             <section class="fields-email-and-messaje">
                                 <article class="email-field">
-                                    <label>Email*</label>
-                                    <input type="email" id="email" placeholder="p. ej.: ada.lovelace@gmail.com">
+                                    <form id="email-request">
+                                        <label for="email-field">Email*</label>
+                                        <input type="email" id="email-field" placeholder="p. ej.: ada.lovelace@gmail.com" required>
+                                    </form>
                                 </article>
                                 <article class="mesaje-field">
-                                    <label>Mensaje*</label>
-                                    <textarea name="message" id="textarea" placeholder="Escriba un mensaje aquí"></textarea>  
+                                    <form id="textare-box-field">
+                                        <label for="textarea-field">Mensaje*</label>
+                                        <textarea name="message" id="textarea-field" placeholder="Escriba un mensaje aquí" required></textarea>
+                                    </form>
                                 </article>
                             </section>
                         </section>
-                        <article class="message-button">
-    																				<!--form for the section contact-->               
-                                <form method="post" action="#">
-                                    <input type="submit" class="submit-button" value="Enviar">
+                        	<!--form for the section contact--> 
+                        <article class="message-button">					         
+                                <form id="submit-button">
+                                    <label for="submit-field"></label>
+                                    <input type="submit" id="submit-field" value="Enviar">
                                 </form>
                         </article>
                     </section>
