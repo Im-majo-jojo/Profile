@@ -436,7 +436,21 @@ textarea{
   font-family: 'Spicy Rice', cursive;
   letter-spacing: 1px;
   font-size: 20px;
-  margin: 2% 0;
+  margin: 1% 0;
+}
+/*mediaqueries*/
+@media (min-width: 500px) {
+  .contact-section-links{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4% 0 0;
+  }
+  .socialMedia{
+    width: 50%;
+  }
+  .contact-section-links i{
+    margin-right: 5px;
+  }
 }
 /*footer*/
 .footer{
