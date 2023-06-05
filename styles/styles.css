@@ -414,16 +414,18 @@ svg:nth-child(13).heart{
 }
 input{
   border: none;
-  border-radius: 10px;
-  padding: 2%;
+  border-radius: 15px;
+  padding: 5px 15px;
+  margin: 0 2%;
 }
 label{
   margin: 2% 0;
 }
 textarea{
-  border-radius: 10px;
+  border-radius: 15px;
   border: none;
-  padding: 2%;
+  padding: 15%;
+  margin: 0 2%;
 }
 #submit-button{
   margin: 3% 0;
@@ -436,20 +438,88 @@ textarea{
   font-family: 'Spicy Rice', cursive;
   letter-spacing: 1px;
   font-size: 20px;
-  margin: 1% 0;
+  margin: 2% 2%;
 }
 /*mediaqueries*/
 @media (min-width: 500px) {
   .contact-section-links{
     display: flex;
     flex-wrap: wrap;
-    padding: 4% 0 0;
+    padding: 4% 0 0 4%;
   }
   .socialMedia{
     width: 50%;
   }
   .contact-section-links i{
     margin-right: 5px;
+  }
+  .fields-name-and-lastname{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .name-field,
+  .lastname-field{
+    width: 48%;
+  }
+}
+@media (min-width: 900px) {
+  .contact-form{
+    width: 100%;
+    padding: 10% 0;
+  }
+  .contactme-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+    padding: 5% 2%;
+    border: 2px solid #ef8c2e;
+    background-color: #ef8c2e;;
+    justify-content: space-around;
+  }
+  .information-section,
+  .form-fields{
+    width: 40%;
+  }
+  .contact-section-links{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 20px 15px 0;
+  }
+  .socialMedia{
+    width: 100%;
+  }
+  .contact-section-links i{
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  #submit-button{
+    margin: 5% 0;
+  }
+  #name-request,
+  #lastname-request,
+  #email-request,
+  #textare-box-field
+  {
+    margin: 2% 0;
+  }
+  #textare-box-field{
+  
+  }
+  .information-section .title-section,
+  .form-fields .title-section{
+    font-size: 40px;
+    padding: 10px 0;
+    margin: 0;
+  }
+  .contact-section-links i{
+    margin: 15px 10px;
+    font-size: 25px;
+  }
+  .information-section .description-of-section{
+    margin-top: 5%;
   }
 }
 /*footer*/
