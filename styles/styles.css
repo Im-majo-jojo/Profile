@@ -98,6 +98,20 @@ width: 40%;
   width: 100%;
 }
 /*mediaqueries*/
+@media (min-width: 551px) {
+  .nickname{
+    margin: 20px 0;
+    font-size: 100px;
+    margin: 15px 0 0;
+  }
+  .greetings{
+    margin-bottom: -8px;
+    margin-left: -200px;
+    }
+  .greetings-text{
+    margin-top: 10px;
+    }
+  }
 @media (min-width: 1100px) {
   .presentation{
     padding: 120px 20px 80px;
@@ -124,7 +138,8 @@ width: 40%;
 .habilities,
 .grid-container{
   background-color: #74b9e0;
-  font-family: 'Sofia', cursive;
+  font-family: 'Spicy Rice', cursive;
+  color: #025383;
 }
 .habilities{
   display: flex;
@@ -147,7 +162,8 @@ width: 40%;
   padding: 30px; 
   margin: 0 3% 3%;
   background-color:#2e9ad8;
-  border: 3px solid #5aacdb;
+  border: 3px solid #2e9ad8;
+  color: #025383;
   border-radius: 4%;
   display: flex;
   width: 200px;
@@ -169,21 +185,6 @@ width: 40%;
   margin: 0 1% 1%;
   }
 } 
-/*queries*/
-@media (min-width: 551px) {
-.nickname{
-  margin: 20px 0;
-  font-size: 100px;
-  margin: 15px 0 0;
-}
-.greetings{
-  margin-bottom: -8px;
-  margin-left: -200px;
-  }
-.greetings-text{
-  margin-top: 10px;
-  }
-}
 /*quote section*/
 .quote-section{
  max-width: 100%;
@@ -277,13 +278,14 @@ svg:nth-child(13).heart{
   flex-direction: column;
   align-items: center;
   padding: 2% 0 5%;
-  font-family: 'Sofia', cursive;
+  font-family: 'Spicy Rice', cursive;
 }
 .project-description-text{
   display: flex;
   flex-direction: column;
   text-align: center;
   padding-bottom: 5%;
+  color: #1a7206;
 }
 .title-section{
   font-size: 60px;
@@ -293,7 +295,7 @@ svg:nth-child(13).heart{
 }
 .projects-card{
   padding: 2%;
-  color: #000;
+  color: #1a7206;
   font-size: 20px;
   text-decoration: none;
 }
@@ -309,7 +311,7 @@ svg:nth-child(13).heart{
   justify-content: center;
 }
 .projects-box{
-  border: 4px solid #95cc89;
+  border: 4px solid #fff;
   border-radius: 2%;
   background-color:#f6f6f6;
   padding: 2%;
@@ -352,8 +354,40 @@ svg:nth-child(13).heart{
 }
 /*contact me*/
 .contact-form{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2%;
+  font-family: 'Spicy Rice', cursive;
+  background-color: #ee9f55;
+}
+.contactme-container{
   width: 95%;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  color: #c06109;
+  padding: 10%;
+}
+.information-section .title-section,
+.form-fields .title-section{
+  font-size: 40px;
+  padding: 15px 0;
+  margin: 0;
+}
+.contact-section-links a,
+.contact-section-links li{
+  text-decoration: none;
+  list-style: none;
+  color: #c06109;
+  line-height: 30px;
+}
+.contact-section-links{
+  padding: 20px 10px 0;
+}
+.contact-section-links i{
+  margin-right: 10px;
 }
 /*footer*/
 .footer{
