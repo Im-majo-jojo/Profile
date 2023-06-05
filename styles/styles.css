@@ -350,6 +350,11 @@ svg:nth-child(13).heart{
     justify-content: space-between;
   }
 }
+/*contact me*/
+.contact-form{
+  width: 95%;
+  display: flex;
+}
 /*footer*/
 .footer{
 background-color: #9f91ec;
