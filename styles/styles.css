@@ -128,6 +128,7 @@ width: 40%;
   margin: 0 3% 3%;
   background-color:#7963f7;
   border: 3px solid #998aeed8;
+  border-radius: 4%;
   display: flex;
   width: 200px;
   flex-direction: column;
@@ -141,6 +142,7 @@ width: 40%;
   margin-bottom: 5px;
   font-size: 20px;
 }
+/*media queries*/
 @media (min-width: 1000px){
   .big-buttons-for-skills{ 
   max-width: 900px;
@@ -229,7 +231,7 @@ width: 40%;
   70% {transform: scale(120);z-index: -1;}
   80% {transform: scale(140);z-index: -50;}
 } 
-
+/*movement*/
 svg:nth-child(2).heart{
   animation-delay: .25s;
 }
@@ -300,8 +302,8 @@ svg:nth-child(13).heart{
 }
 .projects-box{
   border: 1px solid #fff;
+  border-radius: 2%;
   background-color:#f6f6f6;
-  border-radius: 4px; 
   padding: 2%;
   margin: 2%;
   width: 95%;
@@ -309,6 +311,7 @@ svg:nth-child(13).heart{
   flex-direction: column;
   text-align: center;
 }
+/*media queries*/
 @media (min-width: 550px) {
   .projects-box{ 
     padding: 2%;
