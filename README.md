@@ -16,7 +16,7 @@ En esta primera entrega del proyecto; desarrollé la estructura, los estilos y l
 ### Criterios de aceptacion: :thumbsup:
 Los requisitos mínimos tenidos en cuenta en este proyecto:
 - Se respetó el siguiente [diseño](https://frontend-proyecto-portfolio.adaitw.org/ "diseño")
-- se modificaron colores, tipografías e imágenes
+- Se modificaron colores, tipografías e imágenes
 - El portfolio cuenta con:
 	- Header con links de navegación
 	- Sección de presentación
